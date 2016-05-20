@@ -1,6 +1,5 @@
-
 <h1 align ="center"> New Listing </h1>
-<form action ="/listings" method ="post" id ="article[id]">
+<form action ="/listings" method ="post" id ="article[id]" enctype="multipart/form-data">
 	<input type ="hidden" name ="authenticity_token" value="<%= form_authenticity_token %>">
 	<div class="form-group row">
 		<label class ="col-sm-2 form-control-label"> Name </label>
@@ -18,6 +17,12 @@
 		<label class ="col-sm-2 form-control-label"> Price</label>
 		<div class = "col-sm-10">
 			<input type ="text" class ="form-control" name ="listing[price]">
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class ="col-sm-2 form-control-label"> Image </label>
+		<div class ="col-sm-10">
+			<input type ="file" class ="form-control" name ="listing[image]" multiple>
 		</div>
 	</div>
 	<div class ="form-group row">
