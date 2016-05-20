@@ -12,6 +12,11 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 # paperclip for images
 gem "paperclip", "~> 5.0.0.beta1"
+# store images on dropbox
+gem "paperclip-dropbox", ">= 1.1.7"
+
+gem "figaro"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -30,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # make rails console pretty
 gem 'hirb'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
