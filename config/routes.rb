@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
 
+  get 'seller' => "listings#seller"
+
   # make all listings as the homepage
   root 'listings#index'
 
