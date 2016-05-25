@@ -38,3 +38,11 @@ body{
 	h5 {font-size: 25px;}
 	p {font-size: 18px;}
 }
+
+.jumbotron {
+	background-image: url('jumbotron.jpeg') ;
+	background-size: 100% 100%;
+	h1, h2 {
+		font-family: guardian-egyptt, georgia, serif;
+	}
+}
