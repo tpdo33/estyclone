@@ -11,6 +11,9 @@ end
 
   get 'seller' => "listings#seller"
 
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
+
   # make all listings as the homepage
   root 'listings#index'
 

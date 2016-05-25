@@ -50,6 +50,14 @@ class OrdersController < ApplicationController
     @order.destroy
   end
 
+  def sales
+    @orders = Order.all.where(seller: current_user).order("created_at DESC")
+  end
+
+  def purchases
+    @orders = Order.all.where(buyer: current_user).order("created_at DESC")
+  end
+
   private
     def order_params
       params.require(:order).permit(:address, :city, :state)
