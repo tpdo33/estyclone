@@ -38,8 +38,13 @@ class ListingsController < ApplicationController
   end
 
   def update
-    @listing.update(listing_params)
-    redirect_to listing_path(@listing) 
+    if @listing.update(listing_params)
+      flash[:success] = "Listing has successfully been updated" 
+      redirect_to listing_path(@listing)
+    else
+      flash[:errors] = @listing.errors.full_messages
+      redirect_to '/listings'
+    end
   end
 
   def destroy
