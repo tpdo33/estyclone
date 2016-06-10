@@ -46,3 +46,19 @@ body{
 		font-family: guardian-egyptt, georgia, serif;
 	}
 }
+
+.thumbnail{
+	height:350px;
+	width: 250px;
+	overflow: auto;
+}
+
+.thumbnail img {
+	height:300px;
+	width: 200px;
+}
+.caption h3 {
+	max-height: 1.1em;
+	overflow: hidden;
+	
+}
